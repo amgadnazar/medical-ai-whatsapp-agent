@@ -150,19 +150,19 @@ MODEL_NAME=gemini-2.5-flash
 
 ## WhatsApp Conversation
 
-![WhatsApp Chat](screenshots/whatsapp-chat.png)
+![WhatsApp Chat](Screenshots/whatsapp-chat.png)
 
 ---
 
 ## Appointment Booking
 
-![Appointment Booking](screenshots/appointment-booking.png)
+![Appointment Booking](Screenshots/appointment-booking.png)
 
 ---
 
 ## Supabase Database
 
-![Supabase Database](screenshots/supabase-tables.png)
+![Supabase Database](Screenshots/supabase-tables.png)
 
 # System Architecture
 
