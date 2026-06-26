@@ -1,0 +1,32 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.venv/
+venv/
+
+# Environment variables
+.env
+
+# Chroma database
+agent-service/chroma_db/
+
+# Build
+.dist/
+dist/
+build/
+
+# Node.js
+whatsapp-service/node_modules/
+
+# WhatsApp session
+whatsapp-service/.wwebjs_auth/
+whatsapp-service/.wwebjs_cache/
+
+# VS Code
+.vscode/
+
+# OS
+.DS_Store
+Thumbs.db
