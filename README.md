@@ -143,6 +143,142 @@ node index.js
 
 ---
 
+---
+
+# API Documentation
+
+The backend is built using **FastAPI** and exposes RESTful APIs for patient management, AI chat, and appointment booking.
+
+## Base URL
+
+```
+http://localhost:8000
+```
+
+---
+
+## Health Check
+
+Returns the API status.
+
+### Request
+
+```http
+GET /
+```
+
+### Response
+
+```json
+{
+  "status": "running"
+}
+```
+
+---
+
+## AI Chat
+
+Send a patient message to the AI assistant.
+
+### Request
+
+```http
+POST /chat
+```
+
+### Body
+
+```json
+{
+  "phone": "+201234567890",
+  "text": "I want to book an appointment with a dentist."
+}
+```
+
+### Response
+
+```json
+{
+  "reply": "Your appointment has been booked successfully."
+}
+```
+
+---
+
+## Create Patient
+
+Creates a new patient record.
+
+### Request
+
+```http
+POST /patient
+```
+
+### Body
+
+```json
+{
+  "phone": "+201234567890",
+  "name": "John Doe",
+  "age": 28,
+  "gender": "Male"
+}
+```
+
+### Response
+
+```json
+{
+  "message": "Patient created successfully"
+}
+```
+
+---
+
+## Create Appointment
+
+Creates a new appointment manually.
+
+### Request
+
+```http
+POST /appointment
+```
+
+### Body
+
+```json
+{
+  "patient_phone": "+201234567890",
+  "doctor_name": "Dr. Ahmed",
+  "appointment_date": "2026-06-30 10:00"
+}
+```
+
+### Response
+
+```json
+{
+  "message": "Appointment created successfully"
+}
+```
+
+---
+
+## Interactive API Documentation
+
+After running the FastAPI server, open:
+
+```
+http://localhost:8000/docs
+```
+
+FastAPI automatically generates an interactive Swagger UI where you can test every endpoint directly from your browser.
+
+---
+
 # Environment Variables
 
 Create a `.env` file inside `agent-service`
