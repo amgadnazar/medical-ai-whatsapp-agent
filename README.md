@@ -36,25 +36,14 @@ The system uses Google's Gemini AI together with Retrieval-Augmented Generation 
 
 # Tech Stack
 
-## Backend
 
-- Python
-- FastAPI
-- LangChain
-- Google Gemini API
-
-## Database
-
-- Supabase
-
-## Vector Database
-
-- ChromaDB
-
-## Messaging
-
-- WhatsApp Web.js
-- Node.js
+| Category | Technologies |
+|----------|--------------|
+| Backend | Python, FastAPI |
+| AI | Google Gemini, LangChain |
+| Vector Database | ChromaDB |
+| Database | Supabase |
+| Messaging | Node.js, WhatsApp Web.js |
 
 ---
 
@@ -94,19 +83,6 @@ medical-ai-whatsapp-agent/
 
 ---
 
-# Technologies
-
-- Python
-- FastAPI
-- LangChain
-- Google Gemini
-- ChromaDB
-- Supabase
-- WhatsApp Web.js
-- Node.js
-
----
-
 # Installation
 
 ## Clone the repository
@@ -143,11 +119,21 @@ node index.js
 
 ---
 
----
 
 # API Documentation
 
 The backend is built using **FastAPI** and exposes RESTful APIs for patient management, AI chat, and appointment booking.
+
+## Available Endpoints
+
+| Method | Endpoint | Description |
+|--------|----------|-------------|
+| GET | `/` | Health check endpoint |
+| POST | `/chat` | Send a message to the AI assistant |
+| POST | `/patient` | Create a new patient |
+| POST | `/appointment` | Create a new appointment |
+
+---
 
 ## Base URL
 
@@ -281,17 +267,14 @@ FastAPI automatically generates an interactive Swagger UI where you can test eve
 
 # Environment Variables
 
-Create a `.env` file inside `agent-service`
+## Required Environment Variables
 
-```
-GEMINI_API_KEY=YOUR_API_KEY
-
-SUPABASE_URL=YOUR_SUPABASE_URL
-
-SUPABASE_KEY=YOUR_SUPABASE_KEY
-
-MODEL_NAME=gemini-2.5-flash
-```
+| Variable | Description |
+|----------|-------------|
+| GEMINI_API_KEY | Google Gemini API key |
+| SUPABASE_URL | Supabase project URL |
+| SUPABASE_KEY | Supabase service key |
+| MODEL_NAME | Gemini model name |
 
 ---
 
@@ -299,55 +282,31 @@ MODEL_NAME=gemini-2.5-flash
 
 ## WhatsApp Conversation
 
-![WhatsApp Chat](Screenshots/whatsapp-chat.png)
+<p align="center">
+  <img src="Screenshots/whatsapp-chat.png" width="900">
+</p>
 
 ---
 
 ## Appointment Booking
 
-![Appointment Booking](Screenshots/appointment-booking.png)
+<p align="center">
+  <img src="Screenshots/appointment-booking.png" width="900">
+</p>
 
 ---
 
 ## Supabase Database
 
-![Supabase Database](Screenshots/supabase-tables.png)
+<p align="center">
+  <img src="Screenshots/supabase-tables.png" width="900">
+</p>
 
 # System Architecture
 
-```mermaid
-flowchart LR
-
-    U[Patient]
-
-    W[WhatsApp]
-
-    N[WhatsApp Service<br/>Node.js]
-
-    A[FastAPI Backend]
-
-    G[Google Gemini]
-
-    C[ChromaDB]
-
-    S[(Supabase)]
-
-    U --> W
-    W --> N
-    N --> A
-
-    A --> G
-    A --> C
-    A --> S
-
-    G --> A
-    C --> A
-    S --> A
-
-    A --> N
-    N --> W
-    W --> U
-```
+<p align="center">
+    <img src="Screenshots/architecture.png" width="1000">
+</p>
 
 # Future Improvements
 
@@ -365,11 +324,6 @@ flowchart LR
 
 **Amgad Nazar**
 
-LinkedIn:
-https://linkedin.com/in/amjad-nazar
-
-Portfolio:
-https://amgadnazar.github.io
-
-GitHub:
-https://github.com/amgadnazar
+[![GitHub](https://img.shields.io/badge/GitHub-amgadnazar-black?logo=github)](https://github.com/amgadnazar)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Amgad%20Nazar-blue?logo=linkedin)](https://linkedin.com/in/amjad-nazar)
+[![Portfolio](https://img.shields.io/badge/Portfolio-Visit-success)](https://amgadnazar.github.io)
