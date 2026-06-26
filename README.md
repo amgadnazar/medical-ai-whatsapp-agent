@@ -1,5 +1,14 @@
 # 🩺 AI Medical WhatsApp Assistant
 
+![Python](https://img.shields.io/badge/Python-3.13-blue?logo=python)
+![FastAPI](https://img.shields.io/badge/FastAPI-Framework-009688?logo=fastapi)
+![LangChain](https://img.shields.io/badge/LangChain-AI-green)
+![Gemini](https://img.shields.io/badge/Google-Gemini_AI-blue?logo=google)
+![Supabase](https://img.shields.io/badge/Supabase-Database-3ECF8E?logo=supabase)
+![ChromaDB](https://img.shields.io/badge/ChromaDB-Vector_DB-orange)
+![Node.js](https://img.shields.io/badge/Node.js-Backend-339933?logo=node.js)
+![License](https://img.shields.io/badge/License-MIT-yellow)
+
 An AI-powered medical assistant that enables patients to communicate with a healthcare center directly through WhatsApp.
 
 The system uses Google's Gemini AI together with Retrieval-Augmented Generation (RAG) to answer patient questions, provide healthcare information, and book appointments automatically.
