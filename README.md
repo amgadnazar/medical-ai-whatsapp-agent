@@ -160,6 +160,42 @@ MODEL_NAME=gemini-2.5-flash
 
 ---
 
+# System Architecture
+
+```mermaid
+flowchart LR
+
+    U[Patient]
+
+    W[WhatsApp]
+
+    N[WhatsApp Service<br/>Node.js]
+
+    A[FastAPI Backend]
+
+    G[Google Gemini]
+
+    C[ChromaDB]
+
+    S[(Supabase)]
+
+    U --> W
+    W --> N
+    N --> A
+
+    A --> G
+    A --> C
+    A --> S
+
+    G --> A
+    C --> A
+    S --> A
+
+    A --> N
+    N --> W
+    W --> U
+```
+
 ## Supabase Database
 
 ![Supabase Database](screenshots/supabase-tables.png)
