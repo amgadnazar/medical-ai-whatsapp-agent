@@ -160,6 +160,10 @@ MODEL_NAME=gemini-2.5-flash
 
 ---
 
+## Supabase Database
+
+![Supabase Database](screenshots/supabase-tables.png)
+
 # System Architecture
 
 ```mermaid
@@ -195,10 +199,6 @@ flowchart LR
     N --> W
     W --> U
 ```
-
-## Supabase Database
-
-![Supabase Database](screenshots/supabase-tables.png)
 
 # Future Improvements
 
