@@ -148,9 +148,21 @@ MODEL_NAME=gemini-2.5-flash
 
 # Screenshots
 
-Coming Soon
+## WhatsApp Conversation
+
+![WhatsApp Chat](screenshots/whatsapp-chat.png)
 
 ---
+
+## Appointment Booking
+
+![Appointment Booking](screenshots/appointment-booking.png)
+
+---
+
+## Supabase Database
+
+![Supabase Database](screenshots/supabase-tables.png)
 
 # Future Improvements
 
