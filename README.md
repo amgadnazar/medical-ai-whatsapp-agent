@@ -1,5 +1,9 @@
 # 🩺 AI Medical WhatsApp Assistant
 
+<p align="center">
+  <img src="Screenshots/hero.png" alt="AI Medical WhatsApp Assistant">
+</p>
+
 ![Python](https://img.shields.io/badge/Python-3.13-blue?logo=python)
 ![FastAPI](https://img.shields.io/badge/FastAPI-Framework-009688?logo=fastapi)
 ![LangChain](https://img.shields.io/badge/LangChain-AI-green)
